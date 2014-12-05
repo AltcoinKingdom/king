@@ -956,17 +956,9 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     nSubsidy = 750000 * COIN;
     } else if(pindexBest->nHeight >= 2 && pindexBest->nHeight <= 100) {
     nSubsidy = 0 * COIN;
-    } else if(pindexBest->nHeight >= 101 && pindexBest->nHeight <= 4320) {
-    nSubsidy = 125 * COIN;
-    } else if(pindexBest->nHeight >= 4321 && pindexBest->nHeight <= 8640) {
-    nSubsidy = 105 * COIN;
-    } else if(pindexBest->nHeight >= 8641 && pindexBest->nHeight <= 12960) {
-    nSubsidy = 80 * COIN;
-    } else if(pindexBest->nHeight >= 12961 && pindexBest->nHeight <= 17280) {
-    nSubsidy = 55 * COIN;
-    } else if(pindexBest->nHeight >= 17281 && pindexBest->nHeight <= 20160) {
-    nSubsidy = 35 * COIN;
-    }
+    } else if(pindexBest->nHeight >= 101 && pindexBest->nHeight <= 27793) {
+    nSubsidy = 60 * COIN;
+
 		
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
