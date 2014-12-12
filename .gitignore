@@ -38,9 +38,9 @@ Icon
 
 
 src/*.exe
-src/opalcoin
-src/opalcoind
-src/test_opalcoin
+src/kingdomcoin
+src/kingdomcoind
+src/test_kingdomcoin
 .*.swp
 *.*~*
 *.bak
@@ -49,18 +49,18 @@ src/test_opalcoin
 *.o
 *.patch
 *.P
-.opalcoin
+.kingdomcoin
 *.directory
 
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-opalcoin-qt
-OpalCoin-Qt.app
+kingdomcoin-qt
+Kingdomcoin-Qt.app
 
 # Unit-tests
 Makefile.test
-opalcoin-qt_test
+kingdomcoin-qt_test
 
 # Resources cpp
 qrc_*.cpp
